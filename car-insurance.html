@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link href="css/car-styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="car-scripts.js"></script>
+    <title>Car insurance</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Car insurance</h1>
+
+      <p>To give you a quote, we need to know a little about you:</p>
+
+      <form id="insurance" role="form">
+        <div class="form-group">
+        <label for="age">Age</label>
+        <input id="age" type="text">
+        </div>
+        <div class="form-group">
+        <label for="gender">Gender</label>
+        <select id="gender">
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+       </div>
+
+        <button type="submit" class="btn">Calculate my quote</button>
+      </form>
+
+      <div id="quote">
+        <p>You will have to pay $<span id="rate"></span> per month to get car insurance. You should probably just bike or take the bus.</p>
+      </div>
+    </div>
+  </body>
+</html>
